@@ -23,3 +23,5 @@ class Post(models.Model):
     created_at=models.DateTimeField(default=datetime.now)
     no_of_like=models.IntegerField(default=0)
 
+    def __str__(self):
+        return self.user
